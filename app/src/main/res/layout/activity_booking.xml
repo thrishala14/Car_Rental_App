@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F8F8"
+    android:outlineSpotShadowColor="#191515"
+    app:barrierMargin="@dimen/text_margin"
+    tools:context=".Booking">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="275dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="18dp"
+        android:text="Search Car"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/datefrom"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="26dp"
+        android:background="@color/colorSecondary"
+        android:ems="10"
+        android:hint="Date From"
+        android:inputType="date"
+        android:outlineProvider="paddedBounds"
+        android:textColor="@color/black"
+        android:textColorHint="@color/statusBarColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location" />/>
+
+    <EditText
+        android:id="@+id/dateto"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="36dp"
+        android:autoText="false"
+        android:background="@color/colorSecondary"
+        android:ems="10"
+        android:freezesText="false"
+        android:hint="Date To"
+        android:inputType="date"
+        android:textColor="@color/black"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location" />
+
+    <Button
+        android:id="@+id/find_cars"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="71dp"
+        android:background="@drawable/round_button"
+        android:text="FIND CARS"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datefrom" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="402dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/car" />
+
+    <Spinner
+        android:id="@+id/location"
+        android:layout_width="345dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="36dp"
+        android:background="@color/colorSecondary"
+        android:entries="@array/cities"
+        android:popupBackground="#B8F1F8"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

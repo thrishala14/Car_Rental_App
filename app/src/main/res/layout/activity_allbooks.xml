@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F2F2"
+    tools:context=".allbooks"
+    tools:textAlignment="textEnd">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="casual"
+        android:text="Your Current Bookings"
+        android:textColor="@color/colorAccent"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/td"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/td"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="44dp"
+        android:gravity="bottom|left"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/fd"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="44dp"
+        android:gravity="bottom|center|left"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/td" />
+
+    <TextView
+        android:id="@+id/loc"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="44dp"
+        android:gravity="bottom|center|left"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fd" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="44dp"
+        android:gravity="bottom|center|left"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loc" />
+
+    <TextView
+        android:id="@+id/car"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="44dp"
+        android:gravity="bottom|center|left"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cost" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="25dp"
+        android:gravity="bottom|end"
+        android:text="To Date:"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="17dp"
+        android:gravity="bottom|end"
+        android:text="From Date:"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        tools:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="15dp"
+        android:gravity="bottom|end"
+        android:text="Location:"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        tools:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="15dp"
+        android:gravity="bottom|end"
+        android:text="Cost:"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        tools:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="22dp"
+        android:gravity="bottom|end"
+        android:text="Car:"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        tools:textAlignment="textEnd" />
+</androidx.constraintlayout.widget.ConstraintLayout>
